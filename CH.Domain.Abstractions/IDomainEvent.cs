@@ -1,4 +1,6 @@
-﻿namespace CH.Domain.Abstractions
+﻿using System;
+
+namespace CH.Domain.Abstractions
 {
     /// <summary>
     /// Interface for domain events

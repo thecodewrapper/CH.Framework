@@ -1,17 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net7.0;net6.0;net5.0;netstandard2.1;netcoreapp3.1;net47;net471;net472</TargetFrameworks>
+    <TargetFrameworks>net6.0;net5.0;netstandard2.1;netcoreapp3.1;net47;net471;net472</TargetFrameworks>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <Description>Abstractions for tactical Domain-Driven Design patterns</Description>
     <Company>$(Authors)</Company>
     <Authors>Charalambos Hadjiantoniou</Authors>
-    <Title>CH - Domain.Abstractions</Title>
+    <Title>CH - Domain.Abstactions</Title>
     <PackageIcon>logo-duck.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Copyright>$(Authors)</Copyright>
-    <RepositoryUrl>https://github.com/thecodewrapper/CH.Framework</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>

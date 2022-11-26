@@ -1,4 +1,6 @@
-﻿namespace CH.Domain.Abstractions
+﻿using System.Collections.Generic;
+
+namespace CH.Domain.Abstractions
 {
     /// <summary>
     /// Interface for aggregate root
