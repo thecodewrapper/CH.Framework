@@ -1,5 +1,7 @@
 ﻿using CH.Data.Abstractions;
 using CH.EventStore.Abstractions;
+using System;
+using System.Collections.Generic;
 
 namespace CH.EventStore.EntityFramework.Entities
 {

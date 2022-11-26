@@ -3,6 +3,9 @@ using Newtonsoft.Json;
 using CH.EventStore.Abstractions;
 using CH.Domain.Abstractions;
 using CH.EventStore.EntityFramework.Entities;
+using System.Threading.Tasks;
+using System;
+using System.Linq;
 
 namespace CH.EventStore.EntityFramework
 {

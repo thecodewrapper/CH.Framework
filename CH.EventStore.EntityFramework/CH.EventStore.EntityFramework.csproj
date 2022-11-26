@@ -1,13 +1,23 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+	  <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+	  <Description>Event store persistence implementation using EFCore 7. Supports in-memory and SQL providers.</Description>
+	  <Company>$(Authors)</Company>
+	  <Authors>Charalambos Hadjiantoniou</Authors>
+	  <Title>CH - EventStore.EntityFramework</Title>
+	  <PackageIcon>logo-duck.png</PackageIcon>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <Copyright>$(Authors)</Copyright>
+	  <RepositoryUrl>https://github.com/thecodewrapper/CH.Framework</RepositoryUrl>
+	  <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Ardalis.GuardClauses" Version="4.0.1" />
+    <PackageReference Include="CH.Data.Abstractions" Version="1.0.0" />
+    <PackageReference Include="CH.EventStore.Abstractions" Version="1.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
       <PrivateAssets>all</PrivateAssets>
@@ -23,9 +33,8 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\CH.Data.Abstractions\CH.Data.Abstractions.csproj" />
-    <ProjectReference Include="..\CH.EventStore.Abstractions\CH.EventStore.Abstractions.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="logo-duck.png" Pack="true" PackagePath="\" />
+	</ItemGroup>
 
 </Project>
