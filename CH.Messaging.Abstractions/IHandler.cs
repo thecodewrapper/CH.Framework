@@ -1,4 +1,6 @@
-﻿namespace CH.Messaging.Abstractions
+﻿using System.Threading.Tasks;
+
+namespace CH.Messaging.Abstractions
 {
     /// <summary>
     /// Abstraction over a handler of messages coming from a message broker.

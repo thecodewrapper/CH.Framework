@@ -1,9 +1,21 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+	  <TargetFrameworks>net7.0;net6.0;net5.0;netstandard2.1;netcoreapp3.1;net47;net471;net472</TargetFrameworks>
+	  <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+	  <Description>Abstractions for messaging patterns</Description>
+	  <Company>$(Authors)</Company>
+	  <Authors>Charalambos Hadjiantoniou</Authors>
+	  <Title>CH - Messaging.Abstractions</Title>
+	  <PackageIcon>logo-duck.png</PackageIcon>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <Copyright>$(Authors)</Copyright>
+	  <RepositoryUrl>https://github.com/thecodewrapper/CH.Framework</RepositoryUrl>
+	  <RepositoryType>git</RepositoryType>
   </PropertyGroup>
+
+	<ItemGroup>
+		<None Include="logo-duck.png" Pack="true" PackagePath="\" />
+	</ItemGroup>
 
 </Project>
