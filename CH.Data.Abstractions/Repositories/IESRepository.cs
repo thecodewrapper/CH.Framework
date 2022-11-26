@@ -1,4 +1,5 @@
 ﻿using CH.Domain.Abstractions;
+using System.Threading.Tasks;
 
 namespace CH.Data.Abstractions
 {
