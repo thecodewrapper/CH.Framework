@@ -14,4 +14,14 @@ namespace CH.Messaging.Abstractions
     {
         Task<TResponse> HandleAsync(TRequest request);
     }
+
+    /// <summary>
+    /// Abstraction over a handler of messages coming from a message broker.
+    /// Should implement any interfaces to comply with any given message brokers handler object
+    /// </summary>
+    /// <typeparam name="TRequest"></typeparam>
+    public interface IHandler<TRequest> where TRequest : class, IRequest
+    {
+        Task HandleAsync(TRequest request);
+    }
 }

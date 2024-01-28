@@ -12,6 +12,7 @@
 	  <Copyright>$(Authors)</Copyright>
 	  <RepositoryUrl>https://github.com/thecodewrapper/CH.Framework</RepositoryUrl>
 	  <RepositoryType>git</RepositoryType>
+	  <Version>1.1.0</Version>
   </PropertyGroup>
 
 	<ItemGroup>
