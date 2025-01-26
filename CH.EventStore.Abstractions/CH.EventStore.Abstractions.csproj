@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net7.0;net6.0;net5.0;netstandard2.1;netcoreapp3.1</TargetFrameworks>
+		<TargetFrameworks>net9.0;net8.0;net7.0;net6.0;net5.0;netstandard2.1;netcoreapp3.1</TargetFrameworks>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<Description>Abstractions for an event store</Description>
 		<Company>$(Authors)</Company>
@@ -12,14 +12,17 @@
 		<Copyright>$(Authors)</Copyright>
 		<RepositoryUrl>https://github.com/thecodewrapper/CH.Framework</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
+		<Version>1.1.0</Version>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<None Include="logo-duck.png" Pack="true" PackagePath="\" />
+		<None Include="README.md" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CH.Domain.Abstractions" Version="1.0.0" />
+    <PackageReference Include="CH.Domain.Abstractions" Version="1.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 

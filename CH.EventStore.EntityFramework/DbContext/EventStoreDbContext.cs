@@ -1,9 +1,6 @@
-﻿using System.Runtime.CompilerServices;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using CH.Data.Abstractions;
+﻿using CH.Data.Abstractions;
 using CH.EventStore.EntityFramework.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace CH.EventStore.EntityFramework
 {

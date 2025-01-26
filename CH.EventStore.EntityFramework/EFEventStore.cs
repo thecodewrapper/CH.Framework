@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Ardalis.GuardClauses;
 using Microsoft.EntityFrameworkCore;
 using CH.EventStore.Abstractions;
 using CH.Domain.Abstractions;
@@ -38,8 +37,9 @@ namespace CH.EventStore.EntityFramework
         /// <inheritdoc cref="IEventStore.LoadAsync{TAggregateId}(string, string, int, int)"/>
         /// <exception cref="ArgumentException"></exception>
         public async Task<IReadOnlyCollection<IDomainEvent<TAggregateId>>> LoadAsync<TAggregateId>(TAggregateId aggregateRootId, string aggregateName, int fromVersion, int toVersion) {
-            Guard.Against.Negative(fromVersion, nameof(fromVersion));
-            Guard.Against.Negative(toVersion, nameof(toVersion));
+            EnsureVersionNonNegative(fromVersion);
+            EnsureVersionNonNegative(toVersion);
+
             if (fromVersion > toVersion) {
                 throw new ArgumentException($"{nameof(fromVersion)} cannot be grated than {nameof(toVersion)}");
             }
@@ -86,6 +86,11 @@ namespace CH.EventStore.EntityFramework
                 Version = domainEvent.AggregateVersion,
                 CreatedAt = DateTime.UtcNow //duplicate. save or lose??
             };
+        }
+
+        private void EnsureVersionNonNegative(int version) {
+            if (version < 0)
+                throw new ArgumentException("Version cannot be negative");
         }
     }
 }
