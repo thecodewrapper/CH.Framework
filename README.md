@@ -1,3 +1,9 @@
+[![NuGet-CH.Domain.Abstractions](https://img.shields.io/nuget/v/CH.Domain.Abstractions.svg?label=CH.Domain.Abstractions)](https://www.nuget.org/packages/CH.Domain.Abstractions/)
+[![NuGet-CH.Messaging.Abstractions](https://img.shields.io/nuget/v/CH.Messaging.Abstractions.svg?label=CH.Messaging.Abstractions)](https://www.nuget.org/packages/CH.Messaging.Abstractions/)
+[![NuGet-CH.Data.Abstractions](https://img.shields.io/nuget/v/CH.Data.Abstractions.svg?label=CH.Data.Abstractions)](https://www.nuget.org/packages/CH.Data.Abstractions/)
+[![NuGet-CH.EventStore.Abstractions](https://img.shields.io/nuget/v/CH.EventStore.Abstractions.svg?label=CH.EventStore.Abstractions)](https://www.nuget.org/packages/CH.EventStore.Abstractions/)
+[![NuGet-CH.EventStore.EntityFramework](https://img.shields.io/nuget/v/CH.EventStore.EntityFramework.svg?label=CH.EventStore.EntityFramework)](https://www.nuget.org/packages/CH.EventStore.EntityFramework/)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-red.svg)](https://www.paypal.com/donate?hosted_button_id=XSXQYY5KBMXYW)
 
 # CH Framework
 
