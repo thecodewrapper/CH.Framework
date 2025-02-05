@@ -83,4 +83,4 @@ Available as a NuGet package: [CH.EventStore.EntityFramework](https://www.nuget.
 
 ## Contributing
 
-Contributions are welcome! Please follow these steps to contribute:
+Contributions are welcome!
