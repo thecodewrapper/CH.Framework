@@ -5,6 +5,6 @@ namespace CH.Messaging.Abstractions
 {
     public interface IEventBus
     {
-        Task SendAsync(IRequest request, CancellationToken cancellationToken = default);
+        Task PublishAsync(IRequest request, CancellationToken cancellationToken = default);
     }
 }
